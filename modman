@@ -33,3 +33,5 @@ skin/adminhtml/default/default/mandrill/mandrill-tab.png                        
 skin/adminhtml/default/default/mandrill/mandrill.css                                      skin/adminhtml/default/default/mandrill/mandrill.css
 skin/frontend/base/default/magemonkey/magemonkey.css                                      skin/frontend/base/default/magemonkey/magemonkey.css
 skin/frontend/base/default/magemonkey/monkey.js                                           skin/frontend/base/default/magemonkey/monkey.js
+
+js/ebizmarts/                                                            js/ebizmarts/
