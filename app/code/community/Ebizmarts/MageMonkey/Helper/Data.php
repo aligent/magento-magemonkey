@@ -181,7 +181,10 @@ class Ebizmarts_MageMonkey_Helper_Data extends Mage_Core_Helper_Abstract
 		$store = is_null($store) ? Mage::app()->getStore() : $store;
 
 		$configscope = Mage::app()->getRequest()->getParam('store');
-		if( $configscope && ($configscope !== 'undefined') ){
+
+		// Added is_scalar() - Had a wierd error where editing store view caused
+		// the 'store' param to contain an array of the new store view data.
+		if( is_scalar($configscope) && ($configscope !== 'undefined') ){
 			$store = $configscope;
 		}
 
